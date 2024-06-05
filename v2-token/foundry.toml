@@ -1,0 +1,11 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['../../lib', '../../node_modules']
+allow_paths = ["../v2-option/contracts/structs", "../v2-option/contracts/interfaces", "../v2-option/contracts/enums", "../v2-option/contracts/","../v2-pool/contracts/structs", "../v2-pool/contracts/interfaces", "../v2-pool/contracts/enums", "../v2-pool/contracts/"]
+
+
+[profile.default.fuzz]
+max_test_rejects = 100000000
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config

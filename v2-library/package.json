@@ -1,0 +1,10 @@
+{
+  "name": "@timeswap-labs/v2-library",
+  "version": "2.0.0",
+  "scripts": {
+    "build": "hardhat compile"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.2"
+  }
+}

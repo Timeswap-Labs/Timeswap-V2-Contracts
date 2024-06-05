@@ -1,0 +1,20 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = [ '../../lib', '../../node_modules']
+allow_paths = ['../']
+
+
+[profile.default.fuzz]
+max_test_rejects = 100000000
+runs = 1000
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+
+[fmt]
+tab_width = 2
+
+[invariant]
+runs = 10
+depth = 50
+fail_on_revert = true
+# extra_output = ["ir", "irOptimised"]

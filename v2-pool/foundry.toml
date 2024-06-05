@@ -1,0 +1,11 @@
+[profile.default]
+src = 'contracts'
+out = 'out'
+libs = [ '../../lib/', '../../node_modules/']
+allow_paths = ["../v2-option/contracts/structs", "../v2-option/contracts/interfaces", "../v2-option/contracts/enums", "../v2-option/contracts/"]
+# allow_paths = ["*"]
+
+
+
+[profile.default.fuzz]
+max_test_rejects = 100000000
